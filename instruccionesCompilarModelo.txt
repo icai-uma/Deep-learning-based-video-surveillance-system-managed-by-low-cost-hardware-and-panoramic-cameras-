@@ -1,0 +1,10 @@
+curl --location -o model.ell.zip https://github.com/Microsoft/ELL-models/raw/master/models/ILSVRC2012/d_I224x224x3CMCMCMCMCMCMC1AS/d_I224x224x3CMCMCMCMCMCMC1AS.ell.zip
+unzip model.ell.zip
+mv d_I224x224x3CMCMCMCMCMCMC1AS.ell model.ell
+curl --location -o categories.txt https://github.com/Microsoft/ELL-models/raw/master/models/ILSVRC2012/categories.txt
+python ~/ELL/tools/wrap/wrap.py model.ell -lang cpp -target host -outdir model
+cp ~/ELL/docs/tutorials/Getting-started-with-image-classification-in-cpp/*.h .
+mkdir build
+cd build
+cmake .. -DCMAKE_BUILD_TYPE=Release
+make
