@@ -3,7 +3,7 @@ This repository contains the source code of the paper [Deep learning-based video
 
 The contents of this code are provided without any warranty. They are intended for evaluational purposes only.
 
-In order to work properly, this system uses a convolutional neural network and some test data that couldn't be uploaded to this repository because of github upload size limitations. If anyone wants to test this code, we'll be pleasant to provide the cited CNN implementation and the datasets.
+In order to work properly, this system uses a convolutional neural network and some test data that couldn't be uploaded to this repository because of github upload size limitations. If anyone wants to test this code, please write an e-mail to jpicazo@uma.es. I'll be pleasant to provide the cited CNN implementation and the datasets.
 
 Any suggestions and bug reports will be welcome.
 # Citation
